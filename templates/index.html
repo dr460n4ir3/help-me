@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Upload CSV</title>
+  </head>
+  <body>
+    <h1>Upload CSV</h1>
+    <form method="post" enctype="multipart/form-data" action="/upload_csv">
+      <input type="file" name="file">
+      <input type="submit" value="Upload">
+    </form>
+    <h1>Query Data</h1>
+    <form method="post" action="/query">
+      <textarea name="sql" rows="10" cols="30"></textarea><br>
+      <input type="submit" value="Query">
+    </form>
+    <h1>Natural Language Query</h1>
+    <p>Coming Soon!</p>
+    <form method="post" action="/nl_query">
+      <textarea name="nl_query" rows="10" cols="30"></textarea><br>
+      <input type="submit" value="Query">
+    </form>
+  </body>
+</html>
